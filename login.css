@@ -1,0 +1,210 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #0f2d1f, #5a5a00);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Pic/bbb.food.jpg");
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 900px;
+    background: #210b0b;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+}
+
+/* Left Section */
+.left {
+    width: 45%;
+}
+
+.logo {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.left h2 {
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.left p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.left p span {
+    color: brown;
+    cursor: pointer;
+}
+/* sign up */
+.login-text {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-text a {
+    color: #2f6f3e; /* green color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+button,a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: #edecec;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid brown;
+    background: transparent;
+    color:rgb(84, 71, 71);
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: brown;
+    text-decoration: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: brown;
+    color: #edecec;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background:rgb(84, 71, 71);
+}
+
+/* Right Section */
+.right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    /* background: brown; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.circle img {
+    width: 200px;
+}
+
+/* Social Icons */
+.social {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 10px 0;
+    background: rgb(84, 71, 71);
+    color: #000;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background:rgb(84, 71, 71);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .social {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .social a {
+        margin: 0 5px;
+    }
+}
